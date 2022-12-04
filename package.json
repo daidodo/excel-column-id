@@ -1,18 +1,23 @@
 {
-  "name": "PROJECT_NAME",
-  "description": "PROJECT DESCRIPTION.",
+  "name": "excel-column-id",
+  "description": "Generate IDs similar to Excel column ID.",
   "bugs": {
-    "url": "https://github.com/daidodo/PROJECT_NAME/issues"
+    "url": "https://github.com/daidodo/excel-column-id/issues"
   },
-  "homepage": "https://github.com/daidodo/PROJECT_NAME#readme",
+  "homepage": "https://github.com/daidodo/excel-column-id#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daidodo/PROJECT_NAME.git"
+    "url": "git+https://github.com/daidodo/excel-column-id.git"
   },
   "keywords": [
-    "PROJECT KEYWORD"
+    "Microsoft",
+    "Excel",
+    "generate",
+    "string",
+    "column",
+    "id"
   ],
-  "version": "0.0.1",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "private": false,
@@ -95,5 +100,8 @@
     "typedoc": "^0.23.21",
     "typedoc-plugin-markdown": "^3.14.0",
     "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@dozerg/condition": "^1.0.3"
   }
 }

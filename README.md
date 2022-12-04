@@ -1,4 +1,4 @@
-# PROJECT_NAME
+# Excel Column ID
 
 <!--
 First publish:
@@ -8,19 +8,52 @@ npm publish --access public
 ```
 -->
 
-[![npm](https://img.shields.io/npm/v/PROJECT_NAME.svg)](https://www.npmjs.com/package/PROJECT_NAME)
-![Downloads](https://img.shields.io/npm/dm/PROJECT_NAME.svg)
-[![Build Status](https://github.com/daidodo/TEMPLATE_TypeScript/actions/workflows/node.js.yml/badge.svg)](https://github.com/daidodo/TEMPLATE_TypeScript/actions)
+[![npm](https://img.shields.io/npm/v/excel-column-id.svg)](https://www.npmjs.com/package/excel-column-id)
+![Downloads](https://img.shields.io/npm/dm/excel-column-id.svg)
+[![Build Status](https://github.com/daidodo/excel-column-id/actions/workflows/node.js.yml/badge.svg)](https://github.com/daidodo/excel-column-id/actions)
 
-Template for TypeScript projects.
+Generate IDs similar to Excel column ID.
 
 # Usage
 
 ```sh
-npm i PROJECT_NAME
+npm i excel-column-id
+```
+
+```ts
+import generateId from 'excel-column-id';
+
+const A = generateId(0);   // 'A'
+const B = generateId(1);   // 'B'
+const AA = generateId(26); // 'AA'
 ```
 
 # APIs
+
+## generateId
+
+▸ **generateId**(`index`): `string`
+
+Generate IDs similar to Microsoft Excel column IDs:
+
+```txt
+  A, B, C, ...,
+  AA, AB, AC, ...,
+  BA, BB, BC, ...,
+  ...
+```
+
+#### Parameters
+
+| Name    | Type     | Description                       |
+| :------ | :------- | :-------------------------------- |
+| `index` | `number` | Index of the ID, starting from 0. |
+
+#### Returns
+
+`string`
+
+ID string
 
 # License
 
