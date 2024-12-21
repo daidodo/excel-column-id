@@ -1,5 +1,3 @@
-/* eslint jest/expect-expect: "off" */
-
 import generateId from './';
 
 function check(index: number, length: number, expected: string[]) {
